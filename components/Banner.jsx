@@ -1,4 +1,4 @@
-import { Box, Button, Image, Container } from '@chakra-ui/react';
+import { Box, Button, Image, Container, Heading } from '@chakra-ui/react';
 import React from 'react';
 
 
@@ -18,7 +18,19 @@ const Banner = () => {
       </header>
       <Box>
           <Container maxWidth="container.xl">
-            <Box></Box>
+            <Box d="flex" alignItems="center" py="20" flexDirection="row">
+              <Box mr="6">
+                <Heading as="h3" size="lg">
+                  <Box>Celebrating 20 years of real connections on Meetup</Box>
+                </Heading>
+                <Box mt="6" fontWeight={400}>
+                Whatever you’re looking to do this year, Meetup can help. For 20 years, people have turned to Meetup to meet people, make friends, find support, grow a business, and explore their interests. Thousands of events are happening every day—join the fun.s
+                </Box>
+              </Box>
+              <Box w="100%">
+                <Image w="100%" src="/img/illustration.svg" alt="illustration"/>
+              </Box>
+            </Box>
           </Container>
       </Box>
     </>
