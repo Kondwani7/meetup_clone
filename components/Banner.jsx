@@ -1,7 +1,7 @@
-import {Text, Box, Button, Image, Container,Grid, Heading, Badge } from '@chakra-ui/react';
+import {Text, FormControl, Box, Input, Button, Image, Container,Grid, Heading, Badge, InputGroup, InputLeftElement } from '@chakra-ui/react';
 import React from 'react';
-import {AiOutlineArrowRight} from 'react-icons/ai'
-
+import {AiOutlineArrowRight, AiOutlineSearch} from 'react-icons/ai'
+import {IoIosPin} from 'react-icons/io'
 const Banner = () => {
   return (
     <>
@@ -98,6 +98,100 @@ const Banner = () => {
                     <Text fontSize="md">Hone your craft</Text>
                 </Badge>
               </Box>
+            </Container>
+            {/*last section*/}
+            <Container maxW="container.xl">
+              <Grid templateColumns="repeat(2, 1fr)" gap={6}>
+                <Box>
+                  <Heading as="h3" size="lg" mb="7" mt="20">
+                    What do you want to do?
+                  </Heading>
+                  <Box d="flex" alignItems="center">
+                    <Box flexBasis={'50%'} mr="2">
+                      <FormControl id="email">
+                      <Box pos="relative" color="gray.500">
+                          <InputGroup>
+                          <InputLeftElement
+                            className="InputLeft"
+                            pointerEvents="none"
+                            children={<AiOutlineSearch className='searchIcon'/>}
+                            size="xs"/>
+                            <Input type="text" pl="8" placeholder="Search for 'tennis'"/>
+                          </InputGroup>
+                        </Box>
+                      </FormControl>
+                    </Box>
+                    <Box flexBasis={'50%'} ml="2">
+                      <FormControl id="email">
+                      <Box pos="relative" color="gray.500">
+                          <InputGroup>
+                          <InputLeftElement
+                            className="InputLeft"
+                            pointerEvents="none"
+                            children={<IoIosPin className='searchIcon'/>}
+                            size="xs"/>
+                            <Input type="text" pl="8" placeholder="Location"/>
+                          </InputGroup>
+                        </Box>
+                      </FormControl>
+                    </Box>
+                  </Box>
+                  {/*search button large*/}
+                  <Button                 
+                    _hover={{opacity:".8"}}
+                    mt="5"
+                    pt="6"
+                    pb="6"
+                    w="100%"
+                    color="#ffffff"
+                    bg="red.500"
+                    fontSize="lg"
+                    mb="4">
+                      <Text fontSize="medium">Search</Text>
+                    </Button>
+                </Box>
+                {/* part 2 of grid*/}
+                <Box>
+                  <Heading as="h3" size="lg" mb="7" mt="20">
+                    See what's happening
+                  </Heading>
+                  <Badge 
+                    borderRadius="3xl" px={5} py={2} mr="4" mb="4" 
+                    color="#ffff" textTransform="normal" bg="teal.500">
+                      <Text fontSize="md">Starting soon</Text>
+                  </Badge>
+                  <Badge 
+                    borderRadius="3xl" px={5} py={2} mr="4" mb="4" 
+                    color="#ffff" textTransform="normal" bg="teal.500">
+                      <Text fontSize="md">Today</Text>
+                  </Badge>
+                  <Badge 
+                    borderRadius="3xl" px={5} py={2} mr="4" mb="4" 
+                    color="#ffff" textTransform="normal" bg="teal.500">
+                      <Text fontSize="md">Tomorrow</Text>
+                  </Badge>
+                  <Badge 
+                    borderRadius="3xl" px={5} py={2} mb="4" ml="2" 
+                    color="#ffff" textTransform="normal" bg="teal.500">
+                      <Text fontSize="md">This week</Text>
+                  </Badge>
+                  <Badge 
+                    borderRadius="3xl" px={5} py={2} mr="4" mb="4" 
+                    color="#ffff" textTransform="normal" bg="teal.500">
+                      <Text fontSize="md">Online</Text>
+                  </Badge>
+                  <Badge 
+                    borderRadius="3xl" px={5} py={2} mr="4" mb="4" 
+                    color="#ffff" textTransform="normal" bg="teal.500">
+                      <Text fontSize="md">In person</Text>
+                  </Badge>
+                  <Badge 
+                    borderRadius="3xl" px={5} py={2} mr="4" mb="4" 
+                    color="#ffff" textTransform="normal" bg="teal.500">
+                      <Text fontSize="md">Trending Near you</Text>
+                  </Badge>
+                </Box>
+              </Grid>
             </Container>
       </Box>
     </>
