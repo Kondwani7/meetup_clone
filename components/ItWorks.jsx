@@ -1,6 +1,5 @@
 import {Image, Button, Box,Grid, Container, Heading,Text } from '@chakra-ui/react'
 import React from 'react'
-import {AiOutlineArrowRight} from 'react-icons/ai'
 
 const ItWorks = () => {
   return (
