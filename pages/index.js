@@ -4,6 +4,7 @@ import Banner from '../components/Banner'
 import Connected from '../components/Connected'
 import ItWorks from '../components/ItWorks'
 import Popular from '../components/Popular'
+import Stories from '../components/Stories'
 import Upcoming from '../components/Upcoming'
 
 
@@ -20,6 +21,7 @@ export default function Home() {
       <Upcoming/>
       <Popular/>
       <Connected/>
+      <Stories/>
       
 
       
