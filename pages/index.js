@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Banner from '../components/Banner'
 import Connected from '../components/Connected'
+import FooterButton from '../components/FooterButton'
 import ItWorks from '../components/ItWorks'
 import Popular from '../components/Popular'
 import Stories from '../components/Stories'
@@ -22,6 +23,7 @@ export default function Home() {
       <Popular/>
       <Connected/>
       <Stories/>
+      <FooterButton/>
       
 
       
