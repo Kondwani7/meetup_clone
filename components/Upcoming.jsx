@@ -46,10 +46,10 @@ const Upcoming = () => {
                         Thu, Mar 10 @ 12:00 AM CAT
                     </Box>
                     <Heading mt="5" alignItems="center" size="sm" fontWeight="semibold">
-                        Can Artificial Intelligence Help Us Better Project Climate Change?
+                        Can Artificial Intelligence..
                     </Heading>
                     <Box  mt="5" color="#877457" fontWeight="medium" mr="20" alignItems="center" >
-                        The Artificial Intelligence for Goo....
+                        The Artificial Intel..
                     </Box>
                     <Box display="flex" alignItems="center" mt="10" mb="3">
                         <AvatarGroup size="sm" max={2}>
@@ -103,9 +103,6 @@ const Upcoming = () => {
                         <Box color="#877457" ml="40"><BiUpvote size={30}/></Box>
                     </Box>
                 </Box>
-                
-                
-                
               </Grid>
         </Container>
     </Box>
