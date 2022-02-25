@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Banner from '../components/Banner'
 import ItWorks from '../components/ItWorks'
+import Popular from '../components/Popular'
 import Upcoming from '../components/Upcoming'
 
 
@@ -16,6 +17,7 @@ export default function Home() {
       <Banner/>
       <ItWorks/>
       <Upcoming/>
+      <Popular/>
       
 
       
